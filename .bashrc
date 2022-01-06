@@ -126,7 +126,6 @@ export XDG_DATA_HOME=$HOME/.local/share
 export GOPATH=$XDG_DATA_HOME/go
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 export XDG_CONFIG_HOME=$HOME/.config
-export DOCKER_CONFIG=$XDG_CONFIG_HOME/docker
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
