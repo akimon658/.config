@@ -124,7 +124,8 @@ export QT_IM_MODULE=ibus
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export GOPATH=$XDG_DATA_HOME/go
-export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
+export DENO_INSTALL=$HOME/.deno
+export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin:$DENO_INSTALL/bin
 export XDG_CONFIG_HOME=$HOME/.config
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 
