@@ -8,6 +8,6 @@
 [pull]
 	rebase = false
 [gpg]
-	program = /mnt/c/Program Files/Git/usr/bin/gpg.exe
+	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
 [commit]
 	gpgsign = true
