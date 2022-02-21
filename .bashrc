@@ -133,4 +133,3 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 export PNPM_HOME="/home/akimon658/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
-. "$HOME/.cargo/env"
