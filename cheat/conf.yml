@@ -1,6 +1,6 @@
 ---
 colorize: true
-editor: nvim
+editor: editor
 style: monokai
 formatter: terminal16m
 pager: less -FRX
