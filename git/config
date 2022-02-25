@@ -1,13 +1,12 @@
 [user]
 	email = akimo_greninja@yahoo.co.jp
 	name = akimon658
+	singingkey = B3AFE8D2F6B5F574A2DB3AA65B17B8CD34BA841F
 [credential]
 	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
 [init]
 	defaultBranch = main
 [pull]
 	rebase = false
-[gpg]
-	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
 [commit]
 	gpgsign = true
