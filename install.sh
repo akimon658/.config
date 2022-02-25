@@ -1,4 +1,4 @@
 #!/bin/bash
 
 rm ~/.bashrc
-ln -s ./.bashrc ~/.bashrc
+ln -s ~/.config/.bashrc ~/.bashrc
