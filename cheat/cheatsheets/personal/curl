@@ -41,4 +41,4 @@ curl httpbin.org/ip
 curl -o /dev/null -w '%{http_code}\n' -s -I URL
 
 # To send a request with a form value
-curl -X POST -F "<name>=<value>"
+curl <url> -X POST -F "<name>=<value>"
