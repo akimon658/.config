@@ -1,3 +1,5 @@
+[alias]
+	chout = !git branch | fzf | xargs git checkout
 [user]
 	email = akimo_greninja@yahoo.co.jp
 	name = akimon658
