@@ -1,3 +1,68 @@
 [submodule "cheat/cheatsheets/community"]
 	path = cheat/cheatsheets/community
 	url = https://github.com/cheat/cheatsheets.git
+	branch = master
+[submodule "nvim/pack/plugins/opt/emmet-vim"]
+	path = nvim/pack/plugins/opt/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+	branch = master
+[submodule "nvim/pack/plugins/opt/vim-goimports"]
+	path = nvim/pack/plugins/opt/vim-goimports
+	url = https://github.com/mattn/vim-goimports.git
+	branch = master
+[submodule "nvim/pack/plugins/opt/vim-css-color"]
+	path = nvim/pack/plugins/opt/vim-css-color
+	url = https://github.com/ap/vim-css-color.git
+	branch = master
+[submodule "nvim/pack/plugins/start/cmp_luasnip"]
+	path = nvim/pack/plugins/start/cmp_luasnip
+	url = https://github.com/saadparwaiz1/cmp_luasnip.git
+	branch = master
+[submodule "nvim/pack/plugins/start/cmp-nvim-lsp"]
+	path = nvim/pack/plugins/start/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+	branch = main
+[submodule "nvim/pack/plugins/start/LuaSnip"]
+	path = nvim/pack/plugins/start/LuaSnip
+	url = https://github.com/L3MON4D3/LuaSnip.git
+	branch = master
+[submodule "nvim/pack/plugins/start/mkdir.nvim"]
+	path = nvim/pack/plugins/start/mkdir.nvim
+	url = https://github.com/jghauser/mkdir.nvim.git
+	branch = main
+[submodule "nvim/pack/plugins/start/nvim-lspconfig"]
+	path = nvim/pack/plugins/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+	branch = master
+[submodule "nvim/pack/plugins/start/nvim-cmp"]
+	path = nvim/pack/plugins/start/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
+	branch = main
+[submodule "nvim/pack/plugins/start/nvim-scrollview"]
+	path = nvim/pack/plugins/start/nvim-scrollview
+	url = https://github.com/dstein64/nvim-scrollview.git
+	branch = main
+[submodule "nvim/pack/plugins/start/vim-gitbranch"]
+	path = nvim/pack/plugins/start/vim-gitbranch
+	url = https://github.com/itchyny/vim-gitbranch.git
+	branch = master
+[submodule "nvim/pack/plugins/start/nvim-treesitter"]
+	path = nvim/pack/plugins/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+	branch = master
+[submodule "nvim/pack/plugins/start/auto-pairs"]
+	path = nvim/pack/plugins/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+	branch = master
+[submodule "nvim/pack/plugins/start/fzf.vim"]
+	path = nvim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+	branch = master
+[submodule "nvim/pack/plugins/start/fzf"]
+	path = nvim/pack/plugins/start/fzf
+	url = https://github.com/junegunn/fzf.git
+	branch = master
+[submodule "nvim/pack/plugins/start/vscode.nvim"]
+	path = nvim/pack/plugins/start/vscode.nvim
+	url = https://github.com/Mofiqul/vscode.nvim.git
+	branch = main
