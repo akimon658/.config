@@ -1,0 +1,16 @@
+/*
+
+!.github/
+!cheat/
+!npm/
+npm/*
+!npm/npmrc
+!nvim/
+
+!.bashrc
+!.gitignore
+
+!LICENSE
+!README.md
+
+!symlink.sh
