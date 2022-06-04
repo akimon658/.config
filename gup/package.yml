@@ -1,0 +1,6 @@
+global:
+  ldflags: -s -w
+
+packages:
+  - name: hugo
+    tags: extended

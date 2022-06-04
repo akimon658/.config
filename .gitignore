@@ -2,6 +2,7 @@
 
 !.github/
 !cheat/
+!gup/
 !npm/
 npm/*
 !npm/npmrc
