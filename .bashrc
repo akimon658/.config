@@ -138,3 +138,4 @@ export GPG_TTY=$(tty)
 
 stty werase undef
 bind '"\C-w": unix-filename-rubout'
+tabs 4
