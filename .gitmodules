@@ -66,3 +66,7 @@
 	path = nvim/pack/plugins/start/vscode.nvim
 	url = https://github.com/Mofiqul/vscode.nvim.git
 	branch = main
+[submodule "nvim/pack/plugins/start/lazygit.nvim"]
+	path = nvim/pack/plugins/start/lazygit.nvim
+	url = https://github.com/kdheepak/lazygit.nvim.git
+	branch = main
