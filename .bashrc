@@ -92,6 +92,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export DOCKER_CONFIG=$XDG_CONFIG_HOME/docker
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 
+alias vi=nvim
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 export PNPM_HOME="/home/akimon658/.local/share/pnpm"

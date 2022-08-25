@@ -10,8 +10,9 @@ npm/*
 
 !.bashrc
 !.gitignore
+!.inputrc
 
 !LICENSE
 !README.md
 
-!symlink.sh
+!install.sh
