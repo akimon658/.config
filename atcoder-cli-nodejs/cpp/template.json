@@ -1,0 +1,8 @@
+{
+  "task": {
+    "program": ["main.cpp"],
+    "submit": "main.cpp",
+    "testdir": "test",
+    "cmd": "oj-template https://atcoder.jp/contests/$CONTEST_ID/tasks/$TASK_ID > main.cpp"
+  }
+}
