@@ -99,6 +99,4 @@ export PNPM_HOME="/home/akimon658/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export GPG_TTY=$(tty)
 
-stty werase undef
-bind '"\C-w": unix-filename-rubout'
 tabs 4
