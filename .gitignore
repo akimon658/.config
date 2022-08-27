@@ -9,6 +9,7 @@ atcoder-cli-nodejs/session.json
 npm/*
 !npm/npmrc
 !nvim/
+!online-judge-tools/
 
 !.bashrc
 !.gitignore
