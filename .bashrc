@@ -95,7 +95,7 @@ alias vi=nvim
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 export PNPM_HOME="/home/akimon658/.local/share/pnpm"
-export PATH=$PATH:$GOPATH/bin:$DENO_INSTALL/bin:$PNPM_HOME
+export PATH=$GOPATH/bin:$DENO_INSTALL/bin:$PNPM_HOME:$PATH
 export GPG_TTY=$(tty)
 
 tabs 4
