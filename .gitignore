@@ -4,7 +4,6 @@
 !atcoder-cli-nodejs/
 atcoder-cli-nodejs/session.json
 !cheat/
-!gup/
 !npm/
 npm/*
 !npm/npmrc
