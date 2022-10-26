@@ -62,3 +62,7 @@
 	path = nvim/pack/plugins/start/lazygit.nvim
 	url = https://github.com/kdheepak/lazygit.nvim.git
 	branch = main
+[submodule "nvim/pack/plugins/start/nvim-treesitter-context"]
+	path = nvim/pack/plugins/start/nvim-treesitter-context
+	url = https://github.com/nvim-treesitter/nvim-treesitter-context.git
+	branch = master
