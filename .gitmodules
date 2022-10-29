@@ -46,14 +46,6 @@
 	path = nvim/pack/plugins/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
 	branch = master
-[submodule "nvim/pack/plugins/start/fzf.vim"]
-	path = nvim/pack/plugins/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
-	branch = master
-[submodule "nvim/pack/plugins/start/fzf"]
-	path = nvim/pack/plugins/start/fzf
-	url = https://github.com/junegunn/fzf.git
-	branch = master
 [submodule "nvim/pack/plugins/start/vscode.nvim"]
 	path = nvim/pack/plugins/start/vscode.nvim
 	url = https://github.com/Mofiqul/vscode.nvim.git
@@ -65,4 +57,12 @@
 [submodule "nvim/pack/plugins/start/nvim-treesitter-context"]
 	path = nvim/pack/plugins/start/nvim-treesitter-context
 	url = https://github.com/nvim-treesitter/nvim-treesitter-context.git
+	branch = master
+[submodule "nvim/pack/plugins/start/plenary.nvim"]
+	path = nvim/pack/plugins/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+	branch = master
+[submodule "nvim/pack/plugins/start/telescope.nvim"]
+	path = nvim/pack/plugins/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
 	branch = master
