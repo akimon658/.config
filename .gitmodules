@@ -66,3 +66,7 @@
 	path = nvim/pack/plugins/start/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.nvim.git
 	branch = master
+[submodule "nvim/pack/plugins/start/nvim-web-devicons"]
+	path = nvim/pack/plugins/start/nvim-web-devicons
+	url = https://github.com/nvim-tree/nvim-web-devicons.git
+	branch = master

@@ -4,6 +4,8 @@
 !atcoder-cli-nodejs/
 atcoder-cli-nodejs/session.json
 !cheat/
+!lazygit/
+lazygit/state.yml
 !npm/
 npm/*
 !npm/npmrc
