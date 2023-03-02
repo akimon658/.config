@@ -1,8 +1,6 @@
 /*
 
 !.github/
-!atcoder-cli-nodejs/
-atcoder-cli-nodejs/session.json
 !cheat/
 !lazygit/
 lazygit/state.yml
@@ -10,7 +8,6 @@ lazygit/state.yml
 npm/*
 !npm/npmrc
 !nvim/
-!online-judge-tools/
 
 !.bashrc
 !.gitignore
