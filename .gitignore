@@ -1,12 +1,8 @@
 /*
 
 !.github/
-!cheat/
 !lazygit/
 lazygit/state.yml
-!npm/
-npm/*
-!npm/npmrc
 !nvim/
 
 !.bashrc
