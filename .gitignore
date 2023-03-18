@@ -8,6 +8,7 @@ lazygit/state.yml
 !.bashrc
 !.gitignore
 !.inputrc
+!.luarc.json
 
 !LICENSE
 !README.md
