@@ -6,6 +6,7 @@ lazygit/state.yml
 !nvim/
 
 !.bashrc
+!.gitattributes
 !.gitignore
 !.inputrc
 !.luarc.json
