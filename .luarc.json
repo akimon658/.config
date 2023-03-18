@@ -1,6 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
   "diagnostics": {
-    "globals":["vim"]
+    "globals": ["vim"]
+  },
+  "workspace": {
+    "library": [
+      "~/AppData/Local/nvim-data/lazy"
+    ]
   }
 }
