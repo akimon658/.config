@@ -26,8 +26,6 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 
 sudo apt install golang-go -y
 
-go install github.com/jesseduffield/lazygit@latest
-
 curl -fsSL https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb --output nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb
 rm nvim-linux64.deb
