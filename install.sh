@@ -6,18 +6,8 @@ fi
 
 ln -s ~/.config/.inputrc ~/.inputrc
 
-cat << 'EOS' >> ~/.bashrc
-export XDG_DATA_HOME=$HOME/.local/share
-
-export GOPATH=$XDG_DATA_HOME/go
-EOS
-
-sudo sed -r 's@http://(jp\.)?archive\.ubuntu\.com/ubuntu/?@https://linux.yz.yamagata-u.ac.jp/ubuntu/@g' /etc/apt/sources.list
-sudo add-apt-repository ppa:longsleep/golang-backports -y
 sudo apt update
 sudo apt upgrade -y
-
-sudo apt install golang-go -y
 
 curl -fsSL https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb --output nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb
