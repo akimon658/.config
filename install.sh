@@ -9,20 +9,13 @@ ln -s ~/.config/.inputrc ~/.inputrc
 cat << 'EOS' >> ~/.bashrc
 export XDG_DATA_HOME=$HOME/.local/share
 
-export DENO_INSTALL_ROOT=$XDG_DATA_HOME/deno
 export GOPATH=$XDG_DATA_HOME/go
-
-export PATH=$DENO_INSTALL_ROOT/bin:$GOPATH/bin:$PATH
 EOS
 
 sudo sed -r 's@http://(jp\.)?archive\.ubuntu\.com/ubuntu/?@https://linux.yz.yamagata-u.ac.jp/ubuntu/@g' /etc/apt/sources.list
 sudo add-apt-repository ppa:longsleep/golang-backports -y
 sudo apt update
 sudo apt upgrade -y
-
-# https://github.com/denoland/deno_install#unzip-is-required
-sudo apt install unzip -y
-curl -fsSL https://deno.land/x/install/install.sh | sh
 
 sudo apt install golang-go -y
 
