@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $CODESPACES == true ]]; then
-  cp /workspaces/.codespaces/.persistedshare/dotfiles/ ~/.config/
+  cp -r /workspaces/.codespaces/.persistedshare/dotfiles/ ~/.config/
 fi
 
 ln -s ~/.config/.inputrc ~/.inputrc
