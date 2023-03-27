@@ -4,6 +4,7 @@ if [[ $CODESPACES == true ]]; then
   cp -r /workspaces/.codespaces/.persistedshare/dotfiles/ ~/.config/
 fi
 
+rm ~/.config/.inputrc
 ln -s ~/.config/.inputrc ~/.inputrc
 
 sudo apt update
