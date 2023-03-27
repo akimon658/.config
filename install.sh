@@ -17,7 +17,10 @@ sudo curl -fsSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/dow
 sudo chmod +x /usr/local/bin/oh-my-posh
 
 if [[ $(grep microsoft /proc/version) ]]; then
-  echo 'eval "$(oh-my-posh init bash --config /mnt/c/Users/qiuyu/AppData/Local/Programs/oh-my-posh/themes/kushal.omp.json)"' >> ~/.bashrc
+  cat << 'EOS' >> ~/.bashrc
+
+eval "$(oh-my-posh init bash --config /mnt/c/Users/qiuyu/AppData/Local/Programs/oh-my-posh/themes/kushal.omp.json)"
+EOS
 
   curl -fsSL http://github.com/nullpo-head/WSL-Hello-sudo/releases/latest/download/release.tar.gz --output release.tar.gz
   tar -xf release.tar.gz
@@ -29,5 +32,8 @@ else
   unzip themes.zip -d ~/.local/share/poshthemes
   chmod u+rw ~/.local/share/poshthemes/*.omp.*
   rm themes.zip
-  echo 'eval "$(oh-my-posh init bash --config ~/.local/share/poshthemes/kushal.omp.json)"' >> ~/.bashrc
+  cat << 'EOS' >> ~/.bashrc
+
+eval "$(oh-my-posh init bash --config ~/.local/share/poshthemes/kushal.omp.json)"
+EOS
 fi
