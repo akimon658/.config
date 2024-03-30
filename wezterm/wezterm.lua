@@ -5,8 +5,8 @@ local config = {
     "Roboto Mono",
     "Noto Sans JP",
   },
-  font_size = 11.0,
-  window_background_opacity = 0.85,
+  font_size = 14.0,
+  window_background_opacity = 0.8,
 }
 
 if string.find(wezterm.target_triple, "windows") then
