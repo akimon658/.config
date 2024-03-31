@@ -5,6 +5,13 @@
       "vim"
     ]
   },
+  "format": {
+    "defaultConfig": {
+      "call_arg_parentheses": "remove",
+      "quote_style": "double",
+      "trailing_table_separator": "smart"
+    }
+  },
   "workspace": {
     "library": [
       "~/.local/share/nvim/lazy",
