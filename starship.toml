@@ -1,0 +1,20 @@
+[directory]
+truncate_to_repo = false
+truncation_length = 10
+truncation_symbol = "…/"
+
+[git_branch]
+# Default format without "on"
+format = "[$symbol$branch(:$remote_branch)]($style) "
+style = "bold green"
+
+[git_status]
+# Default format without []
+format = "([$all_status$ahead_behind]($style) )"
+# nf-md-pen
+modified = "[󰏪 $count](yellow) "
+# nf-md-plus
+staged = "󰐕 $count "
+style = "bold blue"
+# nf-cod-new_file
+untracked = "[ $count](red)"
