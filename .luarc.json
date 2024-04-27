@@ -14,6 +14,7 @@
   },
   "workspace": {
     "library": [
+      "~/.config/nvim/lua",
       "~/.local/share/nvim/lazy",
       "~/AppData/Local/nvim-data/lazy"
     ]
