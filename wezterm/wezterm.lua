@@ -7,6 +7,7 @@ local config = {
   },
   font_size = 14.0,
   window_background_opacity = 0.8,
+  window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 }
 
 if string.find(wezterm.target_triple, "windows") then
