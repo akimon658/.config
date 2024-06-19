@@ -5,7 +5,7 @@ local config = {
     "Roboto Mono",
     "Noto Sans JP",
   },
-  font_size = 14.0,
+  font_size = 13.0,
   window_background_opacity = 0.8,
   window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 }
