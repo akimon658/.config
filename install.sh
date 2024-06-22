@@ -10,7 +10,7 @@ curl -fsSL https://github.com/neovim/neovim/releases/download/stable/nvim.appima
 chmod +x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh -s -- -y
 cat << 'EOS' >> ~/.bashrc
 eval "$(starship init bash)"
 EOS
