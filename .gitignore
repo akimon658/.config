@@ -2,6 +2,7 @@
 
 !.github/
 !nvim/
+!pacx/
 !wezterm/
 
 !.gitattributes
