@@ -24,6 +24,7 @@ end
 
 ---@type { [string]: string }
 local process_icons = {
+  ["docker"] = wezterm.nerdfonts.md_docker,
   ["go"] = wezterm.nerdfonts.md_language_go,
   ["nvim"] = wezterm.nerdfonts.custom_neovim,
   ["zsh"] = wezterm.nerdfonts.dev_terminal,
