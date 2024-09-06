@@ -11,4 +11,7 @@ return {
   outdated = function()
     os.execute "brew outdated"
   end,
+  list = function()
+    os.execute "brew list"
+  end,
 }
