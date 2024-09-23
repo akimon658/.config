@@ -1,5 +1,5 @@
 ---@param pkg string
-local function upgrade(pkg)
+local function install(pkg)
   if pkg == "" then
     error "package not specified"
   end
@@ -10,5 +10,6 @@ local function upgrade(pkg)
 end
 
 return {
-  upgrade = upgrade,
+  install = install,
+  upgrade = install,
 }
