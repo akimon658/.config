@@ -1,11 +1,16 @@
+local function install()
+  os.execute "pnpm env add --global lts"
+  os.execute "pnpm env use --global lts"
+end
+
 return {
+  install = install,
   upgrade = function()
     ---@type string
     local current_version = io.popen "pnpm env list --global":read()
 
     os.execute("pnpm env remove --global " .. current_version)
-    os.execute "pnpm env add --global lts"
-    os.execute "pnpm env use --global lts"
+    install()
 
     local pnpm_list = io.popen "pnpm list --global"
     if not pnpm_list then
