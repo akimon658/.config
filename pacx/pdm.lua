@@ -1,3 +1,8 @@
+---@param pkg string
+local function install(pkg)
+  os.execute("pdm add --global " .. pkg)
+end
+
 local function list()
   os.execute "pdm list --global"
 end
@@ -8,6 +13,7 @@ local function upgrade(pkg)
 end
 
 return {
+  install = install,
   list = list,
   upgrade = upgrade,
 }
