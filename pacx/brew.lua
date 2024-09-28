@@ -13,6 +13,11 @@ local function uninstall(pkg)
   os.execute("brew uninstall " .. pkg)
 end
 
+---@param pkg string
+local function why(pkg)
+  os.execute("brew uses --installed " .. pkg)
+end
+
 return {
   info = info,
   install = install,
@@ -26,4 +31,5 @@ return {
     os.execute "brew list"
   end,
   uninstall = uninstall,
+  why = why,
 }
