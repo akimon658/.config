@@ -8,7 +8,6 @@
 
 !.gitattributes
 !.gitignore
-!.inputrc
 !.luarc.json
 
 !install.sh
