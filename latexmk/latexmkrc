@@ -1,0 +1,6 @@
+$lualatex = "lualatex -file-line-error -halt-on-error -synctex=1";
+$dvipdf = "dvipdfmx %O -o %D %S";
+$bibtex = "pbibtex";
+$pdf_mode = 4;
+$emulate_aux = 1;
+$aux_dir = "/tmp";
