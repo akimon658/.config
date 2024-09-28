@@ -8,6 +8,11 @@ local function install(pkg)
   os.execute("brew install " .. pkg)
 end
 
+---@param pkg string
+local function uninstall(pkg)
+  os.execute("brew uninstall " .. pkg)
+end
+
 return {
   info = info,
   install = install,
@@ -20,4 +25,5 @@ return {
   list = function()
     os.execute "brew list"
   end,
+  uninstall = uninstall,
 }
