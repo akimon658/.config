@@ -1,3 +1,4 @@
+defaultIndent: "  "
 replacements:
   - this: '、'
     that: '，'
