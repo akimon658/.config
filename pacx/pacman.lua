@@ -17,9 +17,14 @@ local function uninstall(pkg)
   os.execute("pacman -Rs " .. pkg)
 end
 
+local function upgrade()
+  os.execute "pacman -Syu"
+end
+
 return {
   info = info,
   install = install,
   list = list,
   uninstall = uninstall,
+  upgrade = upgrade,
 }
