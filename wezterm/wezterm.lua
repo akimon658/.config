@@ -34,6 +34,10 @@ local process_icons = {
 wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
   local pane = tab.active_pane
   local process_name = trim_path(pane.foreground_process_name)
+
+  if not pane.current_working_dir then
+    return process_name
+  end
   ---@type string
   local cwd = pane.current_working_dir.file_path
 
