@@ -13,6 +13,10 @@ local function uninstall(pkg)
   os.execute("brew uninstall " .. pkg)
 end
 
+local function upgradable()
+  os.execute "brew outdated"
+end
+
 ---@param pkg string
 local function why(pkg)
   os.execute("brew uses --installed " .. pkg)
@@ -24,12 +28,10 @@ return {
   upgrade = function()
     os.execute "brew upgrade"
   end,
-  outdated = function()
-    os.execute "brew outdated"
-  end,
   list = function()
     os.execute "brew list"
   end,
   uninstall = uninstall,
+  upgradable = upgradable,
   why = why,
 }
