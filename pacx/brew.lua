@@ -1,6 +1,7 @@
 ---@param pkg string
-local function info(pkg)
-  os.execute("brew info " .. pkg)
+---@param flags string
+local function info(pkg, flags)
+  os.execute(string.format("brew info %s %s", pkg, flags))
 end
 
 ---@param pkg string
