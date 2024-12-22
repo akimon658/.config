@@ -38,6 +38,9 @@ return {
     {
       name = "upgrade",
       description = "Upgrade packages",
+      aliases = {
+        "up",
+      },
     },
     {
       name = "why",
