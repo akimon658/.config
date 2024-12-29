@@ -8,7 +8,7 @@ local config = {
   font_size = 13.0,
   send_composed_key_when_right_alt_is_pressed = true,
   window_background_opacity = 0.8,
-  window_decorations = "INTEGRATED_BUTTONS | MACOS_FORCE_ENABLE_SHADOW | RESIZE",
+  window_decorations = "INTEGRATED_BUTTONS | RESIZE",
   window_frame = {
     font_size = 13.0,
   },
