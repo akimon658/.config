@@ -26,12 +26,27 @@ local function trim_path(path)
   return s
 end
 
----@type { [string]: string }
+---@class Icon
+---@field color? string
+---@field icon string
+
+---@type { [string]: Icon }
 local process_icons = {
-  ["docker"] = wezterm.nerdfonts.md_docker,
-  ["go"] = wezterm.nerdfonts.md_language_go,
-  ["nvim"] = wezterm.nerdfonts.custom_neovim,
-  ["zsh"] = wezterm.nerdfonts.dev_terminal,
+  docker = {
+    color = "#1d63ed",
+    icon = wezterm.nerdfonts.md_docker,
+  },
+  go = {
+    color = "#79d4fd",
+    icon = wezterm.nerdfonts.md_language_go,
+  },
+  nvim = {
+    color = "#00b952",
+    icon = wezterm.nerdfonts.custom_neovim,
+  },
+  zsh = {
+    icon = wezterm.nerdfonts.dev_terminal,
+  },
 }
 
 wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
@@ -43,8 +58,30 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
   end
   ---@type string
   local cwd = pane.current_working_dir.file_path
+  local text_color = tab.is_active and "#c0c0c0" or "#909090"
 
-  return (process_icons[process_name] or process_name .. " on") .. " " .. trim_path(cwd)
+  return {
+    {
+      Foreground = {
+        Color = text_color, -- For close-tab button
+      },
+    },
+    {
+      Text = utf8.char(0x200B), -- Zero-width space
+    },
+    {
+      Foreground = {
+        Color = tab.is_active and process_icons[process_name].color or text_color,
+      },
+    },
+    { Text = process_icons[process_name].icon or process_name .. " on" },
+    {
+      Foreground = {
+        Color = text_color,
+      },
+    },
+    { Text = " " .. trim_path(cwd) },
+  }
 end)
 
 wezterm.on("gui-startup", function()
