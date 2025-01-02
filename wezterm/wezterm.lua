@@ -58,7 +58,7 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
   end
   ---@type string
   local cwd = pane.current_working_dir.file_path
-  local text_color = tab.is_active and "#c0c0c0" or "#909090"
+  local text_color = tab.is_active and "#c0c0c0" or "#808080"
 
   return {
     {
