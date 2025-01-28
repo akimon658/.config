@@ -59,6 +59,7 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
   ---@type string
   local cwd = pane.current_working_dir.file_path
   local text_color = tab.is_active and "#c0c0c0" or "#808080"
+  local icon_spec = process_icons[process_name]
 
   return {
     {
@@ -71,10 +72,10 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
     },
     {
       Foreground = {
-        Color = tab.is_active and process_icons[process_name].color or text_color,
+        Color = tab.is_active and icon_spec and icon_spec.color or text_color,
       },
     },
-    { Text = process_icons[process_name].icon or process_name .. " on" },
+    { Text = icon_spec and icon_spec.icon or process_name .. " on" },
     {
       Foreground = {
         Color = text_color,
