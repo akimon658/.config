@@ -26,11 +26,7 @@ local function trim_path(path)
   return s
 end
 
----@class Icon
----@field color? string
----@field icon string
-
----@type { [string]: Icon }
+---@type { [string]: { color?: string, icon: string } }
 local process_icons = {
   docker = {
     color = "#1d63ed",
