@@ -1,10 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
-  "diagnostics": {
-    "globals": [
-      "vim"
-    ]
-  },
   "format": {
     "defaultConfig": {
       "call_arg_parentheses": "remove",
@@ -14,6 +9,7 @@
   },
   "workspace": {
     "library": [
+      "/opt/homebrew/share/nvim/runtime/lua/vim",
       "~/.config/nvim/lua",
       "~/.local/share/nvim/lazy",
       "~/AppData/Local/nvim-data/lazy"
