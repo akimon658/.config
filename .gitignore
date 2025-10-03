@@ -5,6 +5,10 @@
 !pacx/
 !wezterm/
 
+!zsh/
+zsh/.zcompdump
+zsh/.zsh_history
+
 !.gitattributes
 !.gitignore
 !.gitmodules
