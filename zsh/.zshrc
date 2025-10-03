@@ -28,6 +28,7 @@ alias python=python3
 
 export PATH=$DENO_INSTALL_ROOT/bin:$PATH
 export PATH=$HOME/.bun/bin:$PATH
+export PATH="$HOME/Library/Application Support/Coursier/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/Users/akimon658/Library/pnpm"
