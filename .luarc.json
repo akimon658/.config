@@ -9,7 +9,7 @@
   },
   "workspace": {
     "library": [
-      "/opt/homebrew/share/nvim/runtime/lua/vim",
+      "/opt/homebrew/share/nvim/runtime/lua",
       "~/.config/nvim/lua",
       "~/.local/share/nvim/lazy",
       "~/AppData/Local/nvim-data/lazy"
