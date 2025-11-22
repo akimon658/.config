@@ -1,6 +1,7 @@
 local wezterm = require "wezterm"
 
 local config = {
+  default_prog = { "/opt/homebrew/bin/fish", "--login" },
   font = wezterm.font_with_fallback {
     "Roboto Mono",
     "Noto Sans JP",
@@ -32,6 +33,9 @@ local process_icons = {
     color = "#1d63ed",
     icon = wezterm.nerdfonts.md_docker,
   },
+  fish = {
+    icon = wezterm.nerdfonts.dev_terminal,
+  },
   go = {
     color = "#79d4fd",
     icon = wezterm.nerdfonts.md_language_go,
@@ -39,9 +43,6 @@ local process_icons = {
   nvim = {
     color = "#00b952",
     icon = wezterm.nerdfonts.custom_neovim,
-  },
-  zsh = {
-    icon = wezterm.nerdfonts.dev_terminal,
   },
 }
 

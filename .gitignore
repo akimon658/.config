@@ -6,6 +6,7 @@
 !pacx/
 !wezterm/
 
+!fish/
 !zsh/
 zsh/.zcompdump
 zsh/.zsh_history
