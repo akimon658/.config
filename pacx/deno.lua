@@ -76,6 +76,9 @@ local function upgrade(pkg, _, version)
     package_name = flags_and_pkg_str:sub(last_space_idx + 1)
   end
 
+  -- Remove quotes and version from package_name
+  package_name = package_name:gsub("^'", ""):gsub("'$", ""):gsub("@([0-9].*)", "")
+
   ---@type string[]
   local permission_flags = {}
 
