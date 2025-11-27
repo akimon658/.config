@@ -16,14 +16,19 @@ local function upgrade()
   ---@type string
   local pnpm_list = io.popen "pnpm list --global --json":read "*a"
   local obj = json.decode(pnpm_list)
+  ---@type table<string, string>?
+  local dependencies = obj[1].dependencies
 
-  ---@type string[]
-  local packages = {}
-  for k, _ in pairs(obj[1].dependencies) do
-    table.insert(packages, k)
+  if dependencies then
+    ---@type string[]
+    local packages = {}
+
+    for k, _ in pairs(dependencies) do
+      table.insert(packages, k)
+    end
+
+    os.execute("pnpm add --global " .. table.concat(packages, " "))
   end
-
-  os.execute("pnpm add --global " .. table.concat(packages, " "))
 end
 
 return {
