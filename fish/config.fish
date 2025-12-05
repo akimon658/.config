@@ -30,6 +30,10 @@ if status is-interactive
     cd (ghq root)/(ghq list | fzf)
   end
 
+  function gocryptfs
+    command gocryptfs -extpass "op read op://Personal/gocryptfs/password" $argv
+  end
+
   function rm
     echo "rm is dangerous, use trash instead"
 
