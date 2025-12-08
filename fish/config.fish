@@ -1,7 +1,7 @@
 # Suppress the default greeting message
 set -g fish_greeting ""
 
-eval (/opt/homebrew/bin/brew shellenv)
+eval (/opt/homebrew/bin/brew shellenv fish)
 
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_DATA_HOME $HOME/.local/share
