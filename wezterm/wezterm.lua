@@ -6,12 +6,12 @@ local config = {
     "Roboto Mono",
     "Noto Sans JP",
   },
-  font_size = 13.0,
+  font_size = 12.0,
   send_composed_key_when_right_alt_is_pressed = true,
   window_background_opacity = 0.8,
   window_decorations = "INTEGRATED_BUTTONS | RESIZE",
   window_frame = {
-    font_size = 13.0,
+    font_size = 12.0,
   },
 }
 
