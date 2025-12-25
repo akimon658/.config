@@ -6,8 +6,6 @@
 !pacx/
 !wezterm/
 
-!fish/
-
 !.gitattributes
 !.gitignore
 !.gitmodules

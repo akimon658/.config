@@ -1,7 +1,7 @@
 local wezterm = require "wezterm"
 
 local config = {
-  default_prog = { "/opt/homebrew/bin/fish", "--login" },
+  default_prog = { string.format("%s/.nix-profile/bin/fish", os.getenv "HOME"), "--login" },
   font = wezterm.font_with_fallback {
     "Roboto Mono",
     "Noto Sans JP",
